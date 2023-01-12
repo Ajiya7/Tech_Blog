@@ -65,4 +65,4 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ### Link to my github: https://github.com/Ajiya7
 ### Link to repo: https://github.com/Ajiya7/Tech_Blog
-### link to deployed applictaion:
+### link to deployed applictaion: 
