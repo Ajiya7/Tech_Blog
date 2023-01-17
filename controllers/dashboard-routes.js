@@ -59,7 +59,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
 });
 
 router.get('/newpost', (req, res) => {
-    res.render('new-posts');
+    res.render('newpost');
 });
 
   module.exports = router;

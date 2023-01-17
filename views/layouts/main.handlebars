@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Tech Blog</title>
 </head>
-<body>
-     <nav id="navbar">
-        <ul id="navbar-ul">
+<header>
+         <nav id="navbar">
+            <div id="titlename">The Tech Blog</div>
+        <ul id="navlinks">
             <li>
                 <p><a class="link" href="/">Home</a></p>
             </li>
-            {{#if loggedIn}}
             <li>
                 <p><a class="link" href="/dashboard">Dashboard</a></p>
             </li>
+            {{#if loggedIn}}
             <li>
                 <p><button id="logout_btn" class="btn-no-style">Logout</button> </p>
             </li>
@@ -26,10 +27,10 @@
             </li>
             {{/if}}
         </ul>
-        <h1 id="titlename">The Tech Blog</h1>
      </nav>
+</header>
+<body>
     {{{body}}}
 </body>
-<script src="/public/js/logout.js"></script>
-<script src="/public/js/home.js"></script>
+<script src="/js/logout.js"></script>
 </html>
