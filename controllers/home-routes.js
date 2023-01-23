@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
                 'id',
                 'content',
                 'title'
-            ],
+             ],
             include: [
               {
                 model: user,
@@ -68,7 +68,7 @@ router.get('/post/:id', async (req, res) => {
         res.status(404).json({ message: 'No post found with this id' });
         return;}
       const post = dbPostData.get({ plain: true });
-      res.render('postview', { post, loggedIn: req.session.loggedIn});
+      res.render('postsview', { post, loggedIn: req.session.loggedIn});
 
     }catch (err) {
       console.log(err);
@@ -76,8 +76,16 @@ router.get('/post/:id', async (req, res) => {
     };
 });
 
-router.get('/dashboard', (req, res) => {
-  res.render('dashboard');
+router.get('/dashboard',withAuth,async (req, res) => {
+  try {
+    const dbPostData = await posts.findAll({
+    })
+  const post = dbPostData.map(posts => posts.get({ plain: true }));
+  res.render('dashboard', { post, loggedIn: req.session.loggedIn });
+}catch (err) {
+  console.log(err);
+  res.status(500).json(err);
+};
 });
 
 module.exports = router; 

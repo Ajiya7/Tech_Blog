@@ -59,7 +59,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
 });
 
 router.get('/newpost', withAuth,(req, res) => {
-    res.render('newpost');
+    res.render('newpost',{loggedIn: req.session.loggedIn });
 });
 
   module.exports = router;

@@ -2,14 +2,10 @@
 ![License](https://img.shields.io/badge/license-MIT-blue "License Badge")
 
 ## Table of Contents
-  - [Description](#description)
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
   - [ScreenShot](#screenshot)
   - [Contact Me](#contact-me)
-
-## Description
-
 
 ## User Story
 
@@ -65,4 +61,4 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ### Link to my github: https://github.com/Ajiya7
 ### Link to repo: https://github.com/Ajiya7/Tech_Blog
-### link to deployed applictaion: 
+### link to deployed applictaion: https://warm-savannah-91374.herokuapp.com/
