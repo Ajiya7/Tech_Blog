@@ -14,10 +14,10 @@
             <li>
                 <p><a class="link" href="/">Home</a></p>
             </li>
+            {{#if loggedIn}}
             <li>
                 <p><a class="link" href="/dashboard">Dashboard</a></p>
             </li>
-            {{#if loggedIn}}
             <li>
                 <p><button id="logout_btn" class="btn-no-style">Logout</button> </p>
             </li>
