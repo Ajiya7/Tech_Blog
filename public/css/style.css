@@ -29,6 +29,77 @@ body {
     text-align: justify;
 }
 
+.createpost{
+    flex: 0 0 50%;
+    max-width: 50%;
+    border: 3px solid var(--dark);
+    border-style: double;
+    border-width: thick;
+    background-color:  lightslategray;
+    color: var(--light);
+    margin-top: 200px;
+    margin-left: 400px;
+    padding: 20px 0px 50px 50px;
+    text-align: justify;
+}
+
+
+
+.edit_post_form{
+    flex: 0 0 50%;
+    max-width: 50%;
+    border: 3px solid var(--dark);
+    border-style: double;
+    border-width: thick;
+    background-color:  lightslategray;
+    color: var(--light);
+    margin-top: 20px;
+    margin-left: 400px;
+    padding: 20px 0px 50px 50px;
+    text-align: justify;
+}
+
+.posts{
+    flex: 0 0 50%;
+    max-width: 70%;
+    border: 3px solid var(--dark);
+    border-style: double;
+    border-width: thick;
+    background-color:  lightslategray;
+    color: var(--light);
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 0px 10px 20px;
+    text-align: justify;
+}
+
+.comments{
+    flex: 0 0 50%;
+    max-width: 70%;
+    border: 3px solid var(--dark);
+    border-style: double;
+    border-width: thick;
+    background-color:  lightslategray;
+    color: var(--light);
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 0px 10px 20px;
+    text-align: justify;
+}
+
+.comment-form{
+    max-width: 50%;
+    border: 3px solid var(--dark);
+    border-style: double;
+    border-width: thick;
+    background-color:  lightslategray;
+    color: var(--light);
+    margin-top: 200px;
+    margin-left: 400px;
+    padding: 20px 0px 50px 50px;
+    text-align: justify;
+}
+
 .form-input{
     size: 50px;
 }
