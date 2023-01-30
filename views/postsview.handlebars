@@ -1,15 +1,23 @@
-{{>posts}}
+<article class="posts">
+    <h2 class="title"><a href="/post/{{id}}">{{post.title}}</a></h2>
+    <h3 class="body">{{post.content}}</h3>
+</article>
 {{#if loggedIn}}
 <form class="comment-form">
   <div>
-    <textarea name="comment-body"></textarea>
+      <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment-body"></textarea>
   </div>
   <div>
     <button type="submit">Add Comment</button>
   </div>
 </form>
 {{/if}}
-{{>comments}}
+{{#each post.comments}}
+<div class="comments">
+    <h3 class="text">{{comment}}</h3>
+</div>
+{{/each}}
 {{#if loggedIn}}
 <script src="/js/comment.js"></script>
 {{/if}}

@@ -22,7 +22,9 @@ router.get('/', withAuth, async (req, res) => {
         ]
     })
       const post = dbPostData.map(posts => posts.get({ plain: true }));
-      res.render('dashboard', { post, loggedIn: true });
+      res.render('dashboard', { post,
+        // loggedIn: true
+      });
 
     }catch (err) {
       console.log(err);

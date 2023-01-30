@@ -6,19 +6,19 @@
     Edit Post
   </h2>
     <div>
-      <input name="title" type="text" value="{{posts.title}}" />
+      <label for="title">Title:</label>
+      <input id="title" name="title" type="text" value="{{posts.title}}" />
     </div>
     <div>
-      <textarea name="content" type="text">{{posts.post_text}}</textarea>
+      <label for="content">content:</label>
+      <textarea id="content" name="content" type="text">{{posts.post_text}}</textarea>
     </div>
     <div>
-    <button type="submit">Save Post</button>
+    <button class="edit_post">Save Post</button>
     <button type="button" class="delete_post_btn">Delete Post</button>
     </div>
   </form>
 </article>
-
-{{>comments}}
 
 <script src="/js/editpost.js"></script>
 <script src="/js/deletepost.js"></script>

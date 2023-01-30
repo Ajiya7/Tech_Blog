@@ -155,3 +155,21 @@ font-size: 18px;
     padding: 20px 0px 50px 50px;
     text-align: justify;
 }
+
+.post{
+    flex: 0 0 50%;
+    max-width: 70%;
+    border: 3px solid var(--dark);
+    border-style: double;
+    border-width: thick;
+    background-color:  lightslategray;
+    color: var(--light);
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 0px 10px 20px;
+    text-align: justify;
+}
+
+.createbtn{
+    margin-left: 45%;
+}
